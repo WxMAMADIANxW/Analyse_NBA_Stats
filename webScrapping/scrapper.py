@@ -1,11 +1,6 @@
 import requests
+from bs4 import BeautifulSoup as bs
 
-def getsite(url):
-    
-    response = requests.get(url)
-    return response.status_code
-    
-
-if __name__ == '__main__':
-    url = "https://www.basketball-reference.com/leagues/NBA_stats_per_game.html"
-    print(getsite(url))
+url = "https://www.basketball-reference.com/leagues/NBA_stats_per_game.html"
+response =  requests.get(url)
+print('coi')
